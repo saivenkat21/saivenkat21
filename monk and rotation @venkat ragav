@@ -1,0 +1,13 @@
+//python program monk and rotation//
+
+t= int(raw_input())
+while t!=0:
+    n,k = map(int, raw_input().split())
+    arr = map(int, raw_input().split())
+    index = n - (k%n)
+    for i in range(index, n):
+        print arr[i],
+    for i in range(index):
+       print arr[i],
+    print ""
+    t-=1
